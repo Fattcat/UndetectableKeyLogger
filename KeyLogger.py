@@ -11,8 +11,12 @@ file_path = "PressedKeys.txt"
 
 def log_key(e):
     with open(file_path, "a") as file:
-        file.write("\n"*2 + ActualDate + "\n"*2 + "Pressed Key : "+ e.name)
+        file.write("\n" + ActualDate + " " + "Pressed Key : "+ e.name)
 
 print("Press q for STOP Script")
 keyboard.hook(log_key)
-keyboard.wait('q')
+keyboard.wait("q")
+if keyboard.is_pressed("q"):
+    print("Pressed q ! Exitting...")
+    with open("PressedKeys.txt", "a") as file:
+        file.write("\n" + ActualDate + " " + "Pressed q ! Exitting...")
