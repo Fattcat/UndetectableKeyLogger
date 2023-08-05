@@ -13,4 +13,4 @@ If You dont have installed yet ...
 - Text File for saving Captured Keys : "PressedKeys.txt"
 
 # For TURN OFF UndetectableKeyLogger
---> Only Press 'q' (it will automatically stop).
+--> Only Press 'f7' (it will automatically stop).
