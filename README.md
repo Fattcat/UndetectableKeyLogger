@@ -1,11 +1,15 @@
 # UndetectableKeyLogger
-- REALLY - Undetectable Key Logger
+# REALLY - Undetectable Key Logger
+If zou dont have installed yet ...
 
-- To Install "keyboard"
+- Text File for saving Captured Keys : "PressedKeys.txt"
+- Install "keyboard"
 ```
-pip3 install keyboard
+--> pip3 install keyboard
 ```
-- To Install "datetime"
+- Install "datetime"
 ```
-pip install datetime
+--> pip install datetime
 ```
+# For TURN OFF UndetectableKeyLogger
+--> Only Press 'q' (it will automatically stop).
